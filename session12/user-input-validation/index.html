@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Input Handling & Validation</title>
+</head>
+<body>
+
+<h2>Tantraz Registration Form</h2>
+
+<form>
+
+    <!-- Mandatory: Full Name -->
+    <label for="name">Full Name</label><br>
+    <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your full name"
+        required
+    >
+    <br><br>
+
+    <!-- Mandatory: Email -->
+    <label for="email">Email Address</label><br>
+    <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter a valid email address"
+        required
+    >
+    <br><br>
+
+    <!-- Mandatory: Category -->
+    <label for="category">Participation Category</label><br>
+    <select
+        id="category"
+        name="category"
+        required
+    >
+        <option value="">Select category</option>
+        <option value="individual">Individual</option>
+        <option value="team">Team</option>
+        <option value="audience">Audience</option>
+    </select>
+    <br><br>
+
+    <!-- Character Limit -->
+    <label for="bio">Biography</label><br>
+    <textarea
+        id="bio"
+        name="bio"
+        maxlength="200"
+        placeholder="Write a short biography (maximum 200 characters)"
+    ></textarea>
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
